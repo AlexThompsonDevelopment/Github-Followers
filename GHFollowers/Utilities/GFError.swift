@@ -1,9 +1,11 @@
 //
-//  ErrorMessage.swift
+//  GFError.swift
 //  GHFollowers
 //
-//  Created by Alexander Thompson on 13/4/21.
+//  Created by Alexander Thompson on 15/4/21.
 //
+
+import Foundation
 
 import Foundation
 
