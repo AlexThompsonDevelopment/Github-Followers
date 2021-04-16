@@ -59,7 +59,7 @@ class GFUserInfoHeaderVC: UIViewController {
     }
     
     func addSubviews() {
-        view.addSubviews(avatarImageView, usernameLabel, nameLabel, locationImageView, locationImageView, bioLabel)
+        view.addSubviews(avatarImageView, usernameLabel, nameLabel, locationImageView, locationLabel, bioLabel)
     }
 
     func layoutUI() {
