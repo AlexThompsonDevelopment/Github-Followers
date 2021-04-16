@@ -15,6 +15,7 @@ class GFItemInfoVC: UIViewController {
     let actionButton = GFButton()
     
     var user: User!
+    weak var delegate: UserInfoVCDelegate!
     
     init(user: User) {
         super.init(nibName: nil, bundle: nil)
@@ -30,7 +31,8 @@ class GFItemInfoVC: UIViewController {
 
     configureBackgroundView()
     layoutUI()
-        configureStackView()
+    configureStackView()
+    configureActionButton()
     }
     
     private func configureBackgroundView() {
@@ -47,6 +49,13 @@ class GFItemInfoVC: UIViewController {
         stackView.addArrangedSubview(itemInfoViewTwo)
     }
     
+    private func configureActionButton() {
+        actionButton.addTarget(self, action: #selector(actionbuttonTapped), for: .touchUpInside)
+    }
+    
+    @objc func actionbuttonTapped() {
+        
+    }
     
     private func layoutUI() {
         view.addSubview(stackView)
