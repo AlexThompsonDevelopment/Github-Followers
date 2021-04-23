@@ -45,6 +45,7 @@
 		FABEC8CF2623C64E00567D4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABEC8CE2623C64E00567D4D /* ViewController.swift */; };
 		FABEC8D42623C65300567D4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABEC8D32623C65300567D4D /* Assets.xcassets */; };
 		FABEC8D72623C65300567D4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABEC8D52623C65300567D4D /* LaunchScreen.storyboard */; };
+		FAE19E7E2632632500FE89B3 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE19E7D2632632500FE89B3 /* UITableView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		FABEC8D32623C65300567D4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FABEC8D62623C65300567D4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FABEC8D82623C65300567D4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE19E7D2632632500FE89B3 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +122,8 @@
 				FAB3CDCB26268FF900C37AAD /* ViewControllers */,
 				FAB3CDCA26268FF200C37AAD /* ImageViews */,
 				FAB3CDC926268FE500C37AAD /* TextFields */,
-				FAB3CDC826268FD700C37AAD /* Views */,
 				FAB3CDC726268FC600C37AAD /* Buttons */,
+				FAB3CDC826268FD700C37AAD /* Views */,
 				FAB3CDBA26254B9800C37AAD /* Cells */,
 			);
 			path = "Custom Views";
@@ -134,6 +136,7 @@
 				FAB3CDF826280EA700C37AAD /* Date+Ext.swift */,
 				FAB3CDFB26280EDB00C37AAD /* String+Ext.swift */,
 				FAB3CE102629511C00C37AAD /* UIView+Ext.swift */,
+				FAE19E7D2632632500FE89B3 /* UITableView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -283,10 +286,10 @@
 				FAB3CDB026252B3E00C37AAD /* Managers */,
 				FABEC8D82623C65300567D4D /* Info.plist */,
 				FAB3CDA8262524E200C37AAD /* Model */,
-				FAB3CDA726251DF200C37AAD /* Support */,
 				FAB3CDA626251CA700C37AAD /* Extensions */,
 				FAB3CDA526251C6700C37AAD /* Custom Views */,
 				FAB3CDA426251C3C00C37AAD /* Screens */,
+				FAB3CDA726251DF200C37AAD /* Support */,
 			);
 			path = GHFollowers;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				FAB3CDE02627C61B00C37AAD /* GFSecondaryTitleLabel.swift in Sources */,
 				FABEC8CB2623C64E00567D4D /* AppDelegate.swift in Sources */,
 				FAB3CDAD2625258B00C37AAD /* User.swift in Sources */,
+				FAE19E7E2632632500FE89B3 /* UITableView+Ext.swift in Sources */,
 				FAB3CDD62627C18600C37AAD /* GFError.swift in Sources */,
 				FAB3CDBC26254BB000C37AAD /* FollowerCell.swift in Sources */,
 				FAB3CE0026290DB500C37AAD /* PersistenceManager.swift in Sources */,

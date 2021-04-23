@@ -8,11 +8,11 @@
 import UIKit
 
 class GFAlertVC: UIViewController {
-
-    let containerView = GFAlertContainerView()
-    let titleLabel = GFTitleLabel(textAlignment: .center, fontSize: 20)
-    let messageLabel = GFBodyLabel(textAlignment: .center)
-    let actionButton = GFButton(backgroundColor: .systemPink, title: "OK")
+    
+    let containerView   = GFAlertContainerView()
+    let titleLabel      = GFTitleLabel(textAlignment: .center, fontSize: 20)
+    let messageLabel    = GFBodyLabel(textAlignment: .center)
+    let actionButton    = GFButton(backgroundColor: .systemPink, title: "OK")
     
     var alertTitle: String?
     var message: String?
@@ -38,6 +38,7 @@ class GFAlertVC: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.black.withAlphaComponent(0.75)
         view.addSubviews(containerView, titleLabel, actionButton, messageLabel)
+        
         configureContainerView()
         configureTitleLabel()
         configureActionButton()
@@ -52,21 +53,20 @@ class GFAlertVC: UIViewController {
             containerView.widthAnchor.constraint(equalToConstant: 280),
             containerView.heightAnchor.constraint(equalToConstant: 220)
         ])
-        
     }
-   
+    
     
     func configureTitleLabel() {
         titleLabel.text = alertTitle ?? "Something went wrong"
-    
+        
         NSLayoutConstraint.activate([
-        titleLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: padding),
-        titleLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
-        titleLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
-        titleLabel.heightAnchor.constraint(equalToConstant: 28)
+            titleLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: padding),
+            titleLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
+            titleLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
+            titleLabel.heightAnchor.constraint(equalToConstant: 28)
         ])
     }
-
+    
     
     func configureActionButton() {
         actionButton.setTitle(buttonTitle ?? "Ok", for: .normal)
@@ -93,7 +93,7 @@ class GFAlertVC: UIViewController {
         ])
     }
     
-
+    
     @objc func dismissVC() {
         dismiss(animated: true)
     }
